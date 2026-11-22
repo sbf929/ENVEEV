@@ -45,7 +45,7 @@
                         </label>
                         <input class="client-info-input" id="full-name"
                             type="text" name="fullName"
-                            placeholder="Mr. Debjit Bag" required>
+                            placeholder="Mr. Debjit Bag" [(ngModel)]="name" required >
                     </div>
 
                     <div class="client-info-field-group">
@@ -54,7 +54,7 @@
                         </label>
                         <input class="client-info-input" id="email"
                             type="email" name="email"
-                            placeholder="debjitbag@gmail.com" required>
+                            placeholder="debjitbag@gmail.com" [(ngModel)]="email" required>
                     </div>
 
                 </div>
@@ -67,14 +67,14 @@
                         </label>
                         <input class="client-info-input" id="organization"
                             type="text" name="organization"
-                            placeholder="Jeet AI Infratech" required>
+                            placeholder="Jeet AI Infratech" [(ngModel)]="org" required>
                     </div>
 
                     <div class="client-info-field-group">
                         <label class="client-info-field" for="service">
                             PRIMARY SERVICE NEEDED
                         </label>
-                        <select class="client-info-input" id="service" name="service">
+                        <select class="client-info-input" id="service" name="service" [(ngModel)]="service">
                             <option value="" disabled selected>Select a service</option>
                             <option value="energy-audit">Energy Engineering & Audits</option>
                             <option value="renewables">Renewable Energy & Microgrids</option>
@@ -93,12 +93,12 @@
                         </label>
                         <textarea class="client-info-input input-large"
                             id="project-scope" name="projectScope"
-                            placeholder="Describe your facility, location and project requirements..."></textarea>
+                            placeholder="Describe your facility, location and project requirements..." [(ngModel)]="scope"></textarea>
                     </div>
                 </div>
 
                 <div id="client-info-submit-btn">
-                    <button type="submit">SUBMIT INQUIRY</button>
+                    <button type="submit" (click)="onSubmit()">SUBMIT INQUIRY</button>
                 </div>
 
             </form>

@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {Nav} from './nav/nav'
 import { Home } from './home/home';
-import { Services } from './services/services';
+import { Services } from './service/services';
 import { IetCalculator } from './iet-calculator/iet-calculator';
 import { Projects } from './projects/projects';
 import { Methodology } from './methodology/methodology';
