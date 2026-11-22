@@ -1,0 +1,14 @@
+<div id="methodology-container">
+    <p class="methodology-title">OUR PROCESS</p>
+    <h2>Five-Stage Workflow</h2>
+
+    <div class="method-cards-container">
+        @for (step of steps; track step.title){
+            <div class="method-card">
+                <span class="method-card-number">{{step.number}}</span>
+                <h3 class="method-card-title">{{ step.title }}</h3>
+                <p class="method-card-desc">{{ step.description }}</p>
+            </div>
+        }
+    </div>
+</div>

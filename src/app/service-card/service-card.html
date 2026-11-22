@@ -1,0 +1,26 @@
+<div class="service-card"
+    [style.--color1]="color1()"
+    [style.--color2]="color2()">
+
+    <div class="service-icon">
+        <i [class]="icon()"></i>
+    </div>
+
+    <h2 class="service-title-text">
+        {{title()}}
+    </h2>
+    
+    <p class="service-desc-text">
+        <!--{{description()}}-->
+    </p>
+
+    <div class="service-point-text-holder">
+        <!--Bullet point Icon + the point-->
+        @for (point of points(); track point){
+            <div class="service-point">
+                <i class="bi bi-check-circle-fill"></i>
+                <p class="service-point-text">{{point}}</p>
+            </div>
+        }
+    </div>
+</div>

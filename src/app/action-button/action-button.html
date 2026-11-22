@@ -1,0 +1,31 @@
+@if (href()) {
+    <a
+        [href]="href()"
+        class="action-button"
+        [style.--btn-bg]="backgroundColor()"
+        [style.--btn-text]="textColor()"
+        [style.--btn-border]="borderColor()"
+        [style.--btn-hover-bg]="hoverBackground()"
+        [style.--btn-hover-text]="hoverTextColor()"
+        [style.--btn-hover-border]="hoverBorderColor()"
+        [style.font-size]="fontSize()"
+        [style.font-weight]="fontWeight()">
+
+        <ng-content></ng-content>
+    </a>
+} @else {
+    <button
+        [type]="type()"
+        class="action-button"
+        [style.--btn-bg]="backgroundColor()"
+        [style.--btn-text]="textColor()"
+        [style.--btn-border]="borderColor()"
+        [style.--btn-hover-bg]="hoverBackground()"
+        [style.--btn-hover-text]="hoverTextColor()"
+        [style.--btn-hover-border]="hoverBorderColor()"
+        [style.font-size]="fontSize()"
+        [style.font-weight]="fontWeight()">
+
+        <ng-content></ng-content>
+    </button>
+}

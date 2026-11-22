@@ -1,0 +1,39 @@
+#projects{
+    background-color: rgb(from #F0F8FF r g b / 0.5);
+    padding: 5rem 4rem;
+}
+
+/* Title and subtitle */
+.marked{
+    color: #00DE9B;
+}
+
+#projects-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 790;
+    color: #007542;
+}
+
+#projects-subtitle{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+#projects-title,
+#projects-subtitle{
+    margin: 0px;
+}
+
+#projects-subtitle{
+    margin-bottom: 4rem;
+}
+
+/* Cards */
+#project-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    grid-auto-rows: 1fr;
+}

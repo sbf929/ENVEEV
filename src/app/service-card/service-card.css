@@ -1,0 +1,72 @@
+/* Body */
+.service-card {
+    /* Compute derived colors right where --color1 and --color2 exist */
+    --border-color: rgb(from var(--color2) r g b / 0.5);
+    --bg-color: rgb(from var(--color1) r g b / 0.1);
+
+    padding: 2rem 2rem;
+    border-radius: 12px;
+
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+
+    transition: box-shadow 0.3s ease;
+
+    height: 100%;
+}
+
+.service-card:hover{
+    background-color: white !important;
+    border: 1px solid rgb(from var(--color2) r g b / 1);
+    box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+.service-card:hover .service-icon{
+    background-color: rgb(from var(--color2) r g b / 0.7);
+}
+
+.service-card:hover .service-icon i{
+    color: white;
+}
+
+/* Icon */
+.service-icon{
+    display: inline-block;
+    background-color: rgb(from var(--color1) r g b / 0.7);
+    padding: 1rem 1rem;
+    border-radius: 12px;
+}
+
+.service-icon i{
+    color: var(--color2)
+}
+
+
+
+/* Text */
+.service-title-text{
+    font-size: 20px;
+}
+
+.service-desc-text{
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Points */
+.bi-check-circle-fill{
+    color: rgb(from var(--color2) r g b / 0.7);
+}
+
+.service-point {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.service-point-text{
+    font-size: 13px;
+    color: rgba(50, 50, 50, 0.8)
+}

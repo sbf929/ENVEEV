@@ -1,0 +1,109 @@
+.blue-body {
+    background-color: #090017;
+
+    background-image:
+        radial-gradient(
+            ellipse at 95% 10%,
+            rgba(0, 222, 155, 0.13) 0%,
+            transparent 45%
+        ),
+        radial-gradient(
+            ellipse at 25% 85%,
+            rgba(13, 148, 136, 0.20) 0%,
+            transparent 60%
+        );
+
+    padding: 5rem 4rem;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.marked{
+    color: #00DE9B;
+}
+
+.plain-line {
+  border: none;
+  height: 1px;
+  background-color: #ffffff; /* Matches your #00DE9B palette */
+  margin: 24px 0;
+}
+
+
+/* Left side */
+#home-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+#home-left h1,
+#home-left p,
+.achievement-stats {
+  margin: 0;
+}
+
+#home *:not(.marked) {
+    color: white;
+}
+
+#home-left h1{
+    font-size: 65px;
+}
+
+.iso-cred{
+    background-color: rgba(0, 222, 155, 0.2);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+    border: 1px solid rgba(0, 222, 155, 0.5);
+    border-radius: 30px;
+}
+
+#about-info{
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: #D3D3D3 !important;
+}
+
+.action{
+    display: flex;
+    gap: 1rem;
+}
+
+#achievement-stats{
+    display: flex;
+    gap: 5rem;
+}
+
+#achievement-stats h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.stat-info{
+    color: #A9A9A9 !important;
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.stat-info sub{
+    color: #A9A9A9 !important;
+}
+
+/* Right */
+.img-container{
+
+    padding: 0rem 0rem;
+    align-items: center;
+
+    box-shadow: 0 0 25px 2px #00DE9B;
+}

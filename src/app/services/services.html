@@ -1,0 +1,21 @@
+<div id="services">
+    <p class="service-area-title">CORE COMPETENCIES</p>
+    <h2 class="service-group-title">Integrated Energy & Environmental Solutions</h2>
+    <p class="service-group-subtitle">Bridging the gap between regulatory compliance, ecological stewardship, 
+        and bottom-line operational profitability.</p>
+
+        <!---->
+    <div class="services-grid">
+        @for (service of services; track service.title){
+            <app-service-card
+                [icon] = "service.icon"
+                [title] = "service.title"
+                [points] = "service.points"
+                [color1] = "service.color1"
+                [color2] = "service.color2"
+            >
+            </app-service-card>
+        }
+
+    </div>      
+</div>

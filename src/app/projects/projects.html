@@ -1,0 +1,18 @@
+<div id="projects">
+    <p id="projects-title">OUR CURRENT PROJECTS</p>
+    <h1 id="projects-subtitle">Featured Engineering Projects</h1>
+
+    <div id="project-cards">
+        @for (project of projects; track project.title){
+            <app-project-card
+                [imageLink] = "project.imageLink"
+                [title] = "project.title"
+                [description] = "project.description"
+                [achievement] = "project.achivement"
+                [complaince] = "project.complaince"
+            >
+
+            </app-project-card>
+        }
+    </div>
+</div>

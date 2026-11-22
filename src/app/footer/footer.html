@@ -1,0 +1,131 @@
+<div class="blue-body">
+
+    <div id="contact-us">
+       <div id="contact-us-left">
+            <p class="contact-title">GET IN TOUCH</p>
+            <h2 class="contact-subtitle">Speak With Us</h2>
+            <p class="contact-read">Ready to decarbonize operations, achieve regulatory compliance, or lower utility overhead? Submit your facility details for a preliminary engineering review.</p>
+
+            <div class="company-info">
+                <div id="company-hq" class="company-info-point">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <div class="company-info-text">
+                        <h3>Engineering Headquarters</h3>
+                        <p>916, Model Town, Madhya Balia, Garia, Kolkata, West Bengal, India Pin Code: 700084</p>
+                    </div>
+                </div>
+
+                <div id="company-email" class="company-info-point">
+                    <i class="bi bi-envelope-fill"></i>
+                    <div class="company-info-text">
+                        <h3>Direct Engineering Desk</h3>
+                        <p>debjit@jeetai.co.in</p>
+                    </div>
+                </div>
+
+                <div id="company-phone" class="company-info-point">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div class="company-info-text">
+                        <h3>24/7 Environmental Compliance Hotline</h3>
+                        <p>+ 91 8980018366</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+       
+        <div id="contact-us-right">
+            <form id="client-info-form">
+
+                <div class="client-info-row-double">
+
+                    <div class="client-info-field-group">
+                        <label class="client-info-field" for="full-name">
+                            FULL NAME *
+                        </label>
+                        <input class="client-info-input" id="full-name"
+                            type="text" name="fullName"
+                            placeholder="Mr. Debjit Bag" required>
+                    </div>
+
+                    <div class="client-info-field-group">
+                        <label class="client-info-field" for="email">
+                            CORPORATE EMAIL *
+                        </label>
+                        <input class="client-info-input" id="email"
+                            type="email" name="email"
+                            placeholder="debjitbag@gmail.com" required>
+                    </div>
+
+                </div>
+
+                <div class="client-info-row-double">
+
+                    <div class="client-info-field-group">
+                        <label class="client-info-field" for="organization">
+                            ORGANIZATION *
+                        </label>
+                        <input class="client-info-input" id="organization"
+                            type="text" name="organization"
+                            placeholder="Jeet AI Infratech" required>
+                    </div>
+
+                    <div class="client-info-field-group">
+                        <label class="client-info-field" for="service">
+                            PRIMARY SERVICE NEEDED
+                        </label>
+                        <select class="client-info-input" id="service" name="service">
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="energy-audit">Energy Engineering & Audits</option>
+                            <option value="renewables">Renewable Energy & Microgrids</option>
+                            <option value="env-impact">Environmental Impact & Compliance</option>
+                            <option value="water">Water, Wastewater & Waste Management</option>
+                            <option value="esg">ESG, Carbon & Climate Advisory</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="client-info-row-single">
+                    <div class="client-info-field-group">
+                        <label class="client-info-field" for="project-scope">
+                            FACILITY LOCATION & PROJECT SCOPE
+                        </label>
+                        <textarea class="client-info-input input-large"
+                            id="project-scope" name="projectScope"
+                            placeholder="Describe your facility, location and project requirements..."></textarea>
+                    </div>
+                </div>
+
+                <div id="client-info-submit-btn">
+                    <button type="submit">SUBMIT INQUIRY</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <hr class="full-line">
+    <!-- Second part -->
+
+    <div id="contact-info">
+        <div class="brand">
+            <div id="company-logo">
+                <p>✦</p>
+            </div>
+            <h3>ENV<span class="marked">EE</span>V</h3>
+        </div>
+
+        <p id="trademark">@ JEET AI INFRA TECH. All rights reserved.</p>
+
+        <div id="external-links">
+            @for (external of external_links; track external.icon){
+                <a [href]="external.link">
+                    <i [class]="external.icon" class="external-link-icon"></i>
+                </a>
+            }
+        </div>
+    </div>
+
+</div>

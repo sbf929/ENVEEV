@@ -1,9 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {Nav} from './nav/nav'
+import { Home } from './home/home';
+import { Services } from './services/services';
+import { IetCalculator } from './iet-calculator/iet-calculator';
+import { Projects } from './projects/projects';
+import { Methodology } from './methodology/methodology';
+import { Footer } from './footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Nav, Home, Services, Footer, IetCalculator, Projects, Methodology],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
