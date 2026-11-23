@@ -13,16 +13,16 @@ export class Projects{
       imageLink: "images/cookstove.jpeg",
       title: "Cookstove",
       description: "Designed and commissioned a hybrid rooftop solar and 8MWh lithium-iron-phosphate battery storage microgrid, eliminating peak demand charges.",
-      achivement: "-42% Grid Draw",
-      complaince: "3.1 Yr ROI"
+      achivement: "...",
+      complaince: "..."
     },
 
     {
       imageLink: "images/biomass.png",
       title: "Biomass Boiler CC",
       description: "Biomass is organic material from living or recently living organisms—such as plants, animals, and microorganisms—used both to measure living matter in ecosystems and as a renewable energy source",
-      achivement: "-6,800 t CO₂/yr",
-      complaince: "LEED Platinum"
+      achivement: "...",
+      complaince: "..."
     }
   ]
 }
